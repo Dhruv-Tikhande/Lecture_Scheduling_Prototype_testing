@@ -15,6 +15,7 @@ import userRoutes from './routes/users.js';
 import facultyRoutes from './routes/faculty.js';
 import enrollmentRoutes from './routes/enrollments.js';
 import lectureSlotRoutes from './routes/lectureSlots.js';
+import assignmentRoutes from './routes/assignments.js';
 import { errorHandler } from './middleware/errorHandler.js';
 
 // Load environment variables
@@ -76,6 +77,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/faculty', facultyRoutes);
 app.use('/api/enrollments', enrollmentRoutes);
 app.use('/api/lecture-slots', lectureSlotRoutes);
+app.use('/api/assignments', assignmentRoutes);
 
 
 // ==========================

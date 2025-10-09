@@ -9,7 +9,7 @@ import Register from './pages/Auth/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Courses from './pages/Courses/Courses';
 import CourseDetail from './pages/Courses/CourseDetail';
-import Schedules from './pages/Schedules/Schedules';
+import Assignments from './pages/Assignments/Assignments';
 import Profile from './pages/Profile/Profile';
 import ProtectedRoute from './components/Auth/ProtectedRoute';
 import FacultyDashboard from './pages/Faculty/FacultyDashboard';
@@ -39,10 +39,10 @@ function App() {
                 }
               />
               <Route
-                path="/schedules"
+                path="/assignments"
                 element={
                   <ProtectedRoute>
-                    <Schedules />
+                    <Assignments />
                   </ProtectedRoute>
                 }
               />
